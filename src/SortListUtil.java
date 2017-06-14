@@ -8,39 +8,17 @@ import java.util.Comparator;
 import java.util.Date;  
 import java.util.List;  
   
-/** 
- * ͨ�ù�����֮��������ĳ�������� 
- * @author ����  
- * ��������:http://blog.csdn.net/lk_blog 
- */  
+
 public class SortListUtil {  
     public static final String DESC = "desc";  
     public static final String ASC = "asc";  
   
-    /** 
-     * ��list�е�Ԫ�ذ���������. 
-     *  
-     * @param list 
-     *            ���򼯺� 
-     * @param field 
-     *            �����ֶ� 
-     * @return 
-     */  
+   
     public static List<?> sort(List<?> list, final String field) {  
         return sort(list, field, null);  
     }  
   
-    /** 
-     * ��list�е�Ԫ�ؽ�������. 
-     *  
-     * @param list 
-     *            ���򼯺� 
-     * @param field 
-     *            �����ֶ� 
-     * @param sort 
-     *            ����ʽ: SortList.DESC(����) SortList.ASC(����). 
-     * @return 
-     */  
+  
     @SuppressWarnings("unchecked")  
     public static List<?> sort(List<?> list, final String field,  
             final String sort) {  
@@ -94,15 +72,7 @@ public class SortListUtil {
         return list;  
     }  
   
-    /** 
-     * ��list�е�Ԫ�ذ�fields��sorts��������, 
-     * fields[i]ָ�������ֶ�,sorts[i]ָ������ʽ.���sorts[i]Ϊ����Ĭ�ϰ���������. 
-     *  
-     * @param list 
-     * @param fields 
-     * @param sorts 
-     * @return 
-     */  
+   
     @SuppressWarnings("unchecked")  
     public static List<?> sort(List<?> list, String[] fields, String[] sorts) {  
         if (fields != null && fields.length > 0) {  
@@ -165,13 +135,7 @@ public class SortListUtil {
         return list;  
     }  
   
-    /** 
-     * Ĭ�ϰ��������� 
-     *  
-     * @param list 
-     * @param method 
-     * @return 
-     */  
+   
     public static List<?> sortByMethod(List<?> list, final String method) {  
         return sortByMethod(list, method, null);  
     }  
@@ -299,13 +263,7 @@ public class SortListUtil {
         return list;  
     }  
   
-    /** 
-     * �ж϶���ʵ�ֵ����нӿ����Ƿ����szInterface 
-     *  
-     * @param clazz 
-     * @param szInterface 
-     * @return 
-     */  
+    
     public static boolean isImplementsOf(Class<?> clazz, Class<?> szInterface) {  
         boolean flag = false;  
   
@@ -326,62 +284,6 @@ public class SortListUtil {
     }  
   
     public static void main(String[] args) throws Exception {  
-//        List<Student> list = new ArrayList<Student>();  
-//  
-//        list.add(new Student(3, "b", 1, new Date(11110000)));  
-//        list.add(new Student(1, "c", 3, new Date(44440000)));  
-//        list.add(new Student(2, "a", 2, new Date(22210000)));  
-//        list.add(new Student(4, "a", 11, new Date(33330000)));  
-//        System.out.println("-------ԭ������-------------------");  
-//        for (Student stu : list) {  
-//            System.out.println(stu.toString());  
-//        }  
-//  
-//        // ��age��������,ע�����������1,2,3,11. ����1,11,2,3(�����String������������������)  
-//        SortListUtil.sort(list, "age", null);  
-//        System.out.println("---------����Integer������,��age��������-----------------");  
-//        for (Student stu : list) {  
-//            System.out.println(stu.toString());  
-//        }  
-//  
-//        // ��id����  
-//        SortListUtil.sort(list, "id", SortListUtil.DESC);  
-//        System.out.println("--------����int�͵���,��id����------------------");  
-//        for (Student stu : list) {  
-//            System.out.println(stu.toString());  
-//        }  
-//  
-//        // �Ȱ�name��������,�ٰ�id��������  
-//        SortListUtil.sort(list, new String[] { "name", "id" }, new String[] {});  
-//        System.out  
-//                .println("---------���Զ�������ֶ�,�Ȱ�name����,name��ͬʱ�ٰ�id����-----------------");  
-//        for (Student stu : list) {  
-//            System.out.println(stu.toString());  
-//        }  
-//  
-//        // �Ȱ�name��������,�ٰ�id��������  
-//        SortListUtil.sort(list, new String[] { "name", "id" }, new String[] {  
-//                SortListUtil.ASC, SortListUtil.DESC });  
-//        System.out  
-//                .println("---------���Զ�������ֶ�,�Ȱ�name����,name��ͬʱ�ٰ�id����-----------------");  
-//        for (Student stu : list) {  
-//            System.out.println(stu.toString());  
-//        }  
-//  
-//        // ��birthday����  
-//        SortListUtil.sort(list, "birthday");  
-//        System.out  
-//                .println("---------����ʵ����Comparable�ӿڵĶ�������,��birthday����-----------------");  
-//        for (Student stu : list) {  
-//            System.out.println(stu.toString());  
-//        }  
-//  
-//        // sortByMethod  
-//        SortListUtil.sortByMethod(list, "getId", null);  
-//        System.out  
-//                .println("---------����sortByMethod,��getId��������-----------------");  
-//        for (Student stu : list) {  
-//            System.out.println(stu.toString());  
-//        }  
+
     }
 }  
